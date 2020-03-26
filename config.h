@@ -85,11 +85,11 @@ static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", NULL };
 static const char *browsercmd[]  = { "google-chrome-stable", NULL };
 
-static const char *upvol[]   = { "/home/david/scripts/vol-up.sh",  NULL };
-static const char *downvol[] = { "/home/david/scripts/vol-down.sh",  NULL };
-static const char *mutevol[] = { "/home/david/scripts/vol-toggle.sh",  NULL };
+static const char *upvol[]   = { "/home/z/.dwm/vol-up.sh",  NULL };
+static const char *downvol[] = { "/home/z/.dwm/vol-down.sh",  NULL };
+static const char *mutevol[] = { "/home/z/.dwm/vol-toggle.sh",  NULL };
 
-static const char *wpcmd[]  = { "/home/david/scripts/wp-change.sh", NULL };
+static const char *wpcmd[]  = { "/home/z/.dwm/wp-change.sh", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
