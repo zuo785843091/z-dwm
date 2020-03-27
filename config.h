@@ -19,8 +19,8 @@ static const int smartgaps          = 1;        /* 1 means no outer gap when the
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
 static const Bool viewontag         = True;     /* Switch view on tag switch */
-static const char *fonts[]          = { "Hack:size=10" };
-static const char dmenufont[]       = "Hack:size=10";
+static const char *fonts[]          = { "SauceCodePro Nerd Font Mono:size=10" };
+static const char dmenufont[]       = "SauceCodePro Nerd Font Mono:size=10";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -97,13 +97,13 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                   XK_apostrophe, togglescratch,  {.v = scratchpadcmd } },
 	{ MODKEY,                       XK_w,      spawn,          {.v = browsercmd } },
-	{ 0,                   XF86XK_AudioLowerVolume, spawn,          {.v = downvol } },
-	{ 0,                   XF86XK_AudioMute,        spawn,          {.v = mutevol } },
-	{ 0,                   XF86XK_AudioRaiseVolume, spawn,          {.v = upvol   } },
-	{ MODKEY,              XK_bracketleft,          spawn,          {.v = downvol } },
-	{ MODKEY,              XK_backslash,            spawn,          {.v = mutevol } },
-	{ MODKEY,              XK_bracketright,         spawn,          {.v = upvol   } },
-    { MODKEY,              XK_n,                    spawn,          {.v = wpcmd } },
+	{ 0,              XF86XK_AudioLowerVolume, spawn,          {.v = downvol } },
+	{ 0,              XF86XK_AudioMute,        spawn,          {.v = mutevol } },
+	{ 0,              XF86XK_AudioRaiseVolume, spawn,          {.v = upvol   } },
+	{ MODKEY,         XK_bracketleft,          spawn,          {.v = downvol } },
+	{ MODKEY,         XK_backslash,            spawn,          {.v = mutevol } },
+	{ MODKEY,         XK_bracketright,         spawn,          {.v = upvol   } },
+    { MODKEY,         XK_n,                    spawn,          {.v = wpcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY|ShiftMask,             XK_j,      rotatestack,    {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_k,      rotatestack,    {.i = -1 } },
